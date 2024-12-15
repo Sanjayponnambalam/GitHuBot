@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHuBot</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    /* Added inline styling to make popup slightly bigger */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212; /* Dark background */
+      color: #d8b4fc; /* Light purple text */
+      text-align: center;
+      width: 400px; /* Increased width */
+      height: 500px; /* Increased height */
+      overflow: hidden;
+    }
+
+    /* Container for layout */
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #a855f7; /* Bright purple */
+      font-size: 28px; /* Bigger title font */
+      margin: 0;
+    }
+
+    /* Textarea styling */
+    textarea {
+      width: 100%;
+      height: 150px; /* Larger input box */
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      color: #fff;
+      background-color: #1e1e1e;
+      border: 2px solid #a855f7;
+      border-radius: 5px;
+      resize: none;
+      outline: none;
+    }
+
+    /* Send button styling */
+    #sendBtn {
+      background-color: #a855f7;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    #sendBtn:hover {
+      background-color: #9333ea; /* Darker purple on hover */
+      transform: scale(1.05);
+    }
+
+    /* Response box styling */
+    #responseBox {
+      width: 100%;
+      height: 200px; /* Larger response area */
+      padding: 10px;
+      font-size: 14px;
+      color: #f3e8ff;
+      background-color: #1e1e1e;
+      border: 1px solid #a855f7;
+      border-radius: 5px;
+      text-align: left;
+      overflow-y: auto;
+      white-space: pre-wrap; /* Preserve text formatting */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>GitHuBot</h1>
+    <p>Type your query below:</p>
+    <textarea id="userInput" placeholder="Type your prompt here..."></textarea>
+    <button id="sendBtn">Send</button>
+    <div id="responseBox"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
