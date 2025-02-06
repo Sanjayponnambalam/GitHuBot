@@ -27,7 +27,7 @@ Follow these steps to set up GitHuBot as a Chrome extension:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/GitHuBot.git
+   git clone https://github.com/Sanjayponnambalam/GitHuBot.git
    cd GitHuBot
    ```
 
